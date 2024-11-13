@@ -1,15 +1,19 @@
 package start;
 
 public class Candidato {
-    private String Nome;
+    private String nome;
     private int id;
 
+    public Candidato(String nome) {
+        this.nome = nome;
+    }
+
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public int getId() {
@@ -18,5 +22,10 @@ public class Candidato {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: "+ nome +".";
     }
 }
